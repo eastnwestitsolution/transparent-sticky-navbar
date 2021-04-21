@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Mohammed Imaduddin">
+    <title>Transparent Sticky Responsive Navbar</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- FREE COPYRIGHT (MAKE SURE TO SUBSCRIBE PROGRAMMING DOSE) -->
+
+    <div class="main-container">
+        <header>
+            <nav>
+                <div class="menu-icon">
+                    <i class="fa fa-bars"></i>
+                </div>
+                <div class="logo">
+                    <p>Programming <span>Dose</span></p>
+                </div>
+                <div class="menu">
+                    <ul>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Blog</a></li>
+                        <li><a href="#">Contact Us</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </header>
+    </div>
+    <div class="content">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique illo ad rem, delectus sunt modi pariatur quo! Incidunt corrupti dolor exercitationem eius nisi, facilis omnis distinctio possimus saepe illum odio.
+        Aspernatur, ducimus pariatur. Magnam deleniti, modi alias facilis a velit harum eligendi sapiente et? Quas, iure architecto delectus repellat itaque voluptates illo veniam possimus rem, recusandae vero fuga deserunt doloremque!
+        Minus aspernatur ipsam vitae deserunt nam a nemo, quod expedita ab facilis reiciendis neque natus provident eum sit voluptatem corrupti fugit magni, numquam ut. Quis odit dolore deserunt nemo eaque.
+        Quibusdam corrupti ab et recusandae animi doloremque inventore totam aliquid quidem deserunt alias eveniet nulla perspiciatis in architecto, ipsum nostrum quae nemo dolorum officia repellat eos? Numquam voluptate iusto cum.
+        Suscipit similique, dolores repellendus doloremque, voluptates omnis, totam veniam perferendis ipsam nemo possimus quasi! Vero laboriosam neque placeat. Aliquid deserunt soluta fuga delectus ducimus sed praesentium sint illum, asperiores modi!
+        Sapiente esse architecto distinctio neque rerum recusandae, ut, expedita fuga minus similique incidunt eligendi animi voluptate iusto unde odio itaque, possimus enim. Consectetur, at eum! Modi tempore explicabo enim optio!
+        Tempora impedit error doloribus odit mollitia! Voluptas et consequatur quaerat, adipisci aliquam blanditiis, magnam unde accusamus id aspernatur culpa. Molestias porro, placeat quas similique distinctio consequuntur quam asperiores fugit quasi.
+    </div>
+    <script>
+        $(document).ready(function(){
+            $(".menu-icon").on("click", function(){
+                $("nav ul").toggleClass("active");
+            })
+        });
+
+        $(window).on("scroll", function(){
+            if($(window).scrollTop()){
+                $('nav').addClass('nav-bg');
+            }
+            else{
+                $('nav').removeClass('nav-bg');
+            }
+        });
+    </script>
+</body>
+</html>
